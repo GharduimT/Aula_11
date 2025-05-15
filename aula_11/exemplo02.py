@@ -1,5 +1,9 @@
 try: #  TENTE EXECUTAR
 
-
-    'COMANDO'
-except
+    n1 = float(input('Numero: '))
+    n2 = float(input('Numero: '))
+    div = n1 / n2
+    print(div)
+    
+except ZeroDivisionError:  #  escreva ERROR se tentar dividir por zero
+    print('Error')
