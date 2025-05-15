@@ -14,8 +14,9 @@
 # finally:
 #     print('Fim da Operação!')
 
+#Exemplo 4
 try: 
-    
+
     n1 = float(input('Numero: '))
     n2 = float(input('Numero: '))
     resultado = n1 / n2
