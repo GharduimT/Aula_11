@@ -9,7 +9,15 @@ except ValueError as e:
 
 
 else:
-    if
-
+    if saque < 0:
+        if saldo >= saque:
+            saldo -= saque
+        elif saque > saldo:
+            print('SALDO INSUFICIENTE')
+        else:
+            print('O saque precisa ser maior que 0')
 
 finally:
+    print('Operação finalizada!')
+# saldo_fl = saldo - saque
+# print(f'Restam {saldo_fl} reais em sua conta')
