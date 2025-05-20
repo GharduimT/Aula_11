@@ -10,21 +10,20 @@ while True:
     try:
         nota1 = int(input('Informe a primeira nota: '))
         if nota1 < 0 or nota1 > 10:
-            print("A nota deve ser numérica de 0 a 10 tente novamente")
+            print("A nota deve ser numérica e de 0 a 10 tente novamente")
 
             continue
 
         nota2 = int(input('Informe a segunda nota: '))
         if nota2 < 0 or nota2 > 10:
-            print("A nota deve ser numérica de 0 a 10 tente novamente")
+            print("A nota deve ser numérica e de 0 a 10 tente novamente")
             continue
         media = (nota1 + nota2)/2
-        # print(f'Média: {media}')
-        break
+        print(f'Média: {media}')
+        # break
 
     except ValueError:
         print("Por favor, digite apenas números válidos.")
-    
     else:
         if media >= 6:
             print('Aluno APROVADO. Sua média foi:', media)
